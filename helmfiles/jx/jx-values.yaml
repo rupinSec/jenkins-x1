@@ -33,16 +33,20 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: rupinSec
+    repository: jenkins-x1
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: devtron.info
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: rupinSec
   repository: bucketrepo
   secretStorage: local
   vault: {}
